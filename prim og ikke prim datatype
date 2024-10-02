@@ -1,0 +1,54 @@
+2.1
+byte: 1 byte (8 bits) – Værdier: -128 til 127
+short: 2 bytes (16 bits) – Værdier: -32,768 til 32,767
+int: 4 bytes (32 bits) – Værdier: -2^31 til 2^31
+long: 8 bytes (64 bits) – Værdier: -2^63 til 2^63
+float: 4 bytes (32 bits) 
+double: 8 bytes (64 bits) -2^31 til (2^31)-1.
+char: 2 bytes (16 bits) - /uooo til /uffff bruges istedet for ascii
+boolean: 1 bit kan være sand eller falsk
+2.2
+void setup() {
+  printMinMaxValues();
+}
+
+void printMinMaxValues() {
+  println("Byte min: " + Byte.MIN_VALUE);
+  println("Byte max: " + Byte.MAX_VALUE);
+
+  println("Short min: " + Short.MIN_VALUE);
+  println("Short max: " + Short.MAX_VALUE);
+
+  println("Int min: " + Integer.MIN_VALUE);
+  println("Int max: " + Integer.MAX_VALUE);
+
+  println("Long min: " + Long.MIN_VALUE);
+  println("Long max: " + Long.MAX_VALUE);
+
+  println("Float min: " + Float.MIN_VALUE);
+  println("Float max: " + Float.MAX_VALUE);
+
+  println("Double min: " + Double.MIN_VALUE);
+  println("Double max: " + Double.MAX_VALUE);
+
+  println("Char min: " + (int) Character.MIN_VALUE);
+  println("Char max: " + (int) Character.MAX_VALUE);
+
+  println("Boolean values: " + Boolean.FALSE + " or " + Boolean.TRUE);
+}
+2.3 
+void setup() {
+  // Kald metoden til beregning af kvadratroden i setup
+  calculateSqrt();
+}
+
+void calculateSqrt() {
+  double sqrt2Double = Math.sqrt(2);
+  double resultDouble = sqrt2Double * sqrt2Double;
+  println("Result using double: " + resultDouble);
+
+  float sqrt2Float = (float) Math.sqrt(2);
+  float resultFloat = sqrt2Float * sqrt2Float;
+  println("Result using float: " + resultFloat);
+}
+jeg vil dog lige sige at jeg har benyttet mig a chatgpt til at hjælpe med at kode det sidste imens min gode ven Oliver var så venlig at hjælpe mig med 2.2 
